@@ -14,7 +14,7 @@
 	<div class="container">
 		<f:form commandName="attendee">
 			<f:errors cssClass="alert alert-danger" path="*" element="div" />
-		<table class="table">
+			<table class="table">
 				<tr>
 					<td><label>Enter name</label></td>
 					<td><f:input path="name" cssClass="form-control" /></td>
@@ -24,8 +24,8 @@
 					<td><f:input path="emailAddress" cssClass="form-control" /></td>
 				</tr>
 				<tr>
-					<td colspan="2"><f:button cssClass="btn btn-success">submit!</f:button>
-					</td>
+					<td colspan="2"><input type="submit" class="btn btn-success"
+						value="submit!" /></td>
 				</tr>
 			</table>
 		</f:form>

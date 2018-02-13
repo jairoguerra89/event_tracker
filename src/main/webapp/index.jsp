@@ -5,9 +5,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Bienvenue</title>
+<title>Index</title>
+<link rel="stylesheet" type="text/css"
+	href='<t:url value="bootstrap.min.css"/>' />
 </head>
 <body>
-	Salut! et bienvenue! <t:message code="site.helloText"/>
+	<div class="container">
+		<ul>
+			<li><a href="event.html">Add Event >> </a></li>
+			<li><a href="attendee.html">Add Attendee >></a></li>
+		</ul>
+	</div>
 </body>
 </html>
