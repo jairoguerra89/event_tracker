@@ -6,18 +6,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Events Page</title>
+<title>Attendees Page</title>
 <link rel="stylesheet" type="text/css"
 	href='<t:url value="bootstrap.min.css"/>' />
 </head>
 <body>
 	<div class="container">
-		<f:form commandName="event">
+		<f:form commandName="attendee">
 			<f:errors cssClass="alert alert-danger" path="*" element="div" />
 		<table class="table">
 				<tr>
-					<td><label>Enter minutes</label></td>
+					<td><label>Enter name</label></td>
 					<td><f:input path="name" cssClass="form-control" /></td>
+				</tr>
+				<tr>
+					<td><label>Enter email address</label></td>
+					<td><f:input path="emailAddress" cssClass="form-control" /></td>
 				</tr>
 				<tr>
 					<td colspan="2"><f:button cssClass="btn btn-success">submit!</f:button>
