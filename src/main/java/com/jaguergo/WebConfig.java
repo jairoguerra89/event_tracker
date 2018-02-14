@@ -33,6 +33,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry.addResourceHandler("/pdfs/**").addResourceLocations("/WEB-INF/pdfs/");
 		registry.addResourceHandler("*.css").addResourceLocations("/WEB-INF/css/");
+		registry.addResourceHandler("*.js").addResourceLocations("/WEB-INF/js/");
 	}
 
 	@Bean

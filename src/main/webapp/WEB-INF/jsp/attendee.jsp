@@ -29,6 +29,7 @@
 				</tr>
 			</table>
 		</f:form>
+		
 	</div>
 </body>
 </html>

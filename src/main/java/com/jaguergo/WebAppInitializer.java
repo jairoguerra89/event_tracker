@@ -16,11 +16,14 @@ public class WebAppInitializer implements WebApplicationInitializer {
 	public void onStartup(ServletContext servletContext) throws ServletException {
 		WebApplicationContext context = getApplicationContext();
 		servletContext.addListener(new ContextLoaderListener(context));
-		ServletRegistration.Dynamic dispatcher = servletContext.addServlet("DispatcherServlet", new DispatcherServlet(context));
+		ServletRegistration.Dynamic dispatcher = servletContext.addServlet("DispatcherServlet",
+				new DispatcherServlet(context));
 		dispatcher.setLoadOnStartup(1);
 		dispatcher.addMapping("*.html");
 		dispatcher.addMapping("*.css");
 		dispatcher.addMapping("/pdfs/**");
+		dispatcher.addMapping("*.json");
+		dispatcher.addMapping("*.js");
 	}
 
 	public WebApplicationContext getApplicationContext() {
